@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <title>My Blog</title>
+</head>
+
+
+<body>
+    <h1>Blog Titles</h1>
+    <ul>
+        <!-- <li>{{ blog_names.0 }}</li>
+        <li>{{ blog_names.1 }}</li>
+        <li>{{ blog_names.2 }}</li> -->
+        
+        {% for title in blog_names %}
+            <li>{{ title }}</li>
+        {% endfor %}
+
+
+    </ul>
+    
+</body>
+</html>

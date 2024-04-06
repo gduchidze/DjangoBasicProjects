@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library Catalog</title>
+</head>
+<body>
+    <h1>Library Catalog</h1>
+    <h2>gasfggfa</h2>
+    <ul>
+        {% for book in books %}
+            <li><a href="{% url 'book_detail' book.title %}"> {{ book.title }} </a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_book' %}">Add new Book</a>
+
+</body>
+</html>
